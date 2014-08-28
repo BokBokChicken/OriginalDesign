@@ -31,5 +31,5 @@ void partB()
 }
 void mousePressed()
 {
-	background(random(0,255),random(0,255),random(0,255));
+  background(random(0,255),random(0,255),random(0,255));
 }
