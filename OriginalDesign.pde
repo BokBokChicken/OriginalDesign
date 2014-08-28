@@ -1,22 +1,35 @@
+//Alvin Yin Block 3 AP Computer Science
+
+//Click to change background color
 void setup()
 {
-  size(100,100);
+  size(200,100);
 }
 void draw()
 {
-  head();
-  face();
+  partA();
+  partB();
 }
-void head()
+void partA()
 {
-  fill(255,255,0);
-  ellipse(50,50,50,50);
+  noStroke();
+  fill(102,255,102);
+  rect(20,10,10,40);
+  rect(50,10,10,25);
+  rect(80,10,10,40);
+  rect(30,50,50,40);
 }
-void face()
+void partB()
 {
-  fill(0,0,0);
-  ellipse(30,70,10,10);
-  ellipse(70,70,10,10);
-  arcdraw(50,80,25,25,PI/8,7*PI/8);
+  noStroke();
+  fill(255,102,102);
+  rect(110,10,80,16);
+  rect(110,26,32,16);
+  rect(158,26,32,16);
+  rect(142,42,16,16);
+  rect(120,75,60,15);
 }
-
+void mousePressed()
+{
+	background(random(0,255),random(0,255),random(0,255));
+}
